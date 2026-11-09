@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><title>Overthere / Process memory</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="study">
+<header class="masthead"><div class="identity"><h1>Overthere / Process memory</h1><p>Incoming memory → consolidation → derived output</p></div><dl><div><dt>Sample notes</dt><dd>40</dd></div><div><dt>Routes</dt><dd id="route-count">200</dd></div><div><dt>Clock</dt><dd id="clock">0.00</dd></div><div><dt>State</dt><dd id="state">Running</dd></div></dl><div class="header-actions"><button id="pause">Pause</button><button id="fullscreen" hidden>Fullscreen</button></div></header>
+<section class="hero" aria-label="Animated sample-memory process. Stationary input wires carry black pulses into a rotating data band; aligned horizontal outputs respond to their arrivals.">
+<canvas id="field" aria-hidden="true"></canvas><svg id="transport" viewBox="0 0 1000 870" aria-hidden="true"><g id="ink" fill="none" stroke="#000" stroke-linecap="round"></g></svg><canvas id="band" aria-hidden="true"></canvas>
+<div id="loading" class="loading">Preparing process memory…</div><div class="study-readout"><span id="active-id">N01</span><span id="stage">Incoming sample</span><span id="arrival">0.000</span></div>
+<button class="motion-start" id="motion-start" hidden>Enable animation</button>
+</section>
+<section class="instruments" aria-label="Eight instruments using the same sample-memory process">
+<article class="instrument"><h2>Arrival feed <span>01</span></h2><canvas id="panel0" aria-hidden="true"></canvas><p id="meta0">No arrivals yet</p></article>
+<article class="instrument"><h2>Injection / vector field <span>02</span></h2><canvas id="panel1" aria-hidden="true"></canvas><p id="meta1">Incoming amplitudes</p></article>
+<article class="instrument"><h2>Consolidation workspace <span>03</span></h2><canvas id="panel2" aria-hidden="true"></canvas><p id="meta2">Sample process, not model internals</p></article>
+<article class="instrument"><h2>Source / derived output <span>04</span></h2><canvas id="panel3" aria-hidden="true"></canvas><p id="meta3">Aligned by route travel time</p></article>
+<article class="instrument"><h2>Memory / extraction routes <span>05</span></h2><canvas id="panel4" aria-hidden="true"></canvas><p id="meta4">Same active sample throughout</p></article>
+<article class="instrument"><h2>Signal history <span>06</span></h2><canvas id="panel5" aria-hidden="true"></canvas><p id="meta5">Input, arrival, response</p></article>
+<article class="instrument"><h2>Dispatch / route matrix <span>07</span></h2><canvas id="panel6" aria-hidden="true"></canvas><p id="meta6">200 fixed propagation paths</p></article>
+<article class="instrument"><h2>Reference / link index <span>08</span></h2><canvas id="panel7" aria-hidden="true"></canvas><p id="meta7">Fictional related-note links</p></article>
+</section>
+<section class="control-desk" aria-label="Process controls"><div class="controls"><label>Find a sample <input id="search" type="search" placeholder="Sound, space, ritual…" autocomplete="off"></label><button id="inject">Inject next sample</button><button id="reset">Reset</button><button id="read">Read active note</button></div><p class="explanation">A visual process model with fictional notes. Black pulses travel along fixed wires; arrival strength drives the opposite output and every instrument. The moving band represents consolidation, not a view into an AI’s hidden reasoning.</p><div id="notes" class="note-index" aria-label="Sample notes"></div></section>
+<footer><span>Overthere · independent visual case study</span><a href="SOURCES.html">Code, methods &amp; licences</a></footer>
+</main>
+<dialog id="note-dialog"><form method="dialog"><button class="close">Close</button></form><span id="note-number" class="note-number"></span><h2 id="note-title"></h2><p id="note-body"></p><p id="note-links"></p><button id="dialog-inject">Inject this memory</button><p class="fiction">Fictional sample. Not connected to a personal memory store.</p></dialog>
+<script type="module" src="app.js"></script>
+</body></html>

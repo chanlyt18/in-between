@@ -1,0 +1,13 @@
+Model Information:
+* title:	Rose
+* source:	https://sketchfab.com/3d-models/rose-6281bf3703584323bb4d8326f1f1b59d
+* author:	Heliona (https://sketchfab.com/Heliona)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rose" (https://sketchfab.com/3d-models/rose-6281bf3703584323bb4d8326f1f1b59d) by Heliona (https://sketchfab.com/Heliona) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+Local changes: resized base-color/normal textures to at most 1024 px and ORM to 512 px, packed into GLB. Geometry and original PBR maps retained; scene instances are normalized, transformed and reversibly fragmented in the browser.
+Redistributed from https://github.com/Gaohaoyang/threeJourney/tree/671699650fae30ad2e59e9e3227b4273712f09d1/src/assets/models/rose
